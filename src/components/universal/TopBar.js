@@ -9,9 +9,9 @@ const TopBar = () => {
             <Box
             sx={{width: 70}}
             component='img'
-            src='/browseui/assets/ghrc_logo.png'/>
+            src='/prepub/assets/ghrc_logo.png'/>
             <Typography variant="h5" noWrap component="div" sx={{ml: 2}}>
-               Cloud Browse
+               Pre Publication
             </Typography>
         </Toolbar>
     </AppBar>

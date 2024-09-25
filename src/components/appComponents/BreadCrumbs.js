@@ -26,7 +26,7 @@ const BreadCrumbs = ({ setSkipFalse }) => {
 
     const updateBrowserURL  = (id) => {
         // Modify the URL
-        var newUrl =  'browseui/#' + id;
+        var newUrl =  'prepub/#' + id;
         // Change the URL without reloading the page
         window.history.pushState({ path: newUrl }, '', newUrl);
     }
@@ -45,7 +45,7 @@ const BreadCrumbs = ({ setSkipFalse }) => {
     const handleRootClick = () =>{
         setSkipFalse()
         dispatch(setDelim('/'))
-        dispatch(setSearch('pub/'))
+        dispatch(setSearch('prepub/'))
         dispatch(setCrumb(''))
         updateBrowserURL('')
     }
@@ -66,7 +66,7 @@ const BreadCrumbs = ({ setSkipFalse }) => {
                   <FaHome/> Home
               </Typography>
               {crumbArray.map((crmb, index)=>(
-                  crmb['crmb'] !== 'pub'?
+                  crmb['crmb'] !== 'prepub'?
                       <Typography key={index} onClick={() => handleCrumbClick(crmb)} sx={{cursor:"pointer"}}>
                           {crmb['crmb']}
                       </Typography>:""

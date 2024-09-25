@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState={
-    value: 'pub/'
+    value: 'prepub/'
 }
 
 export const searchSlice = createSlice({

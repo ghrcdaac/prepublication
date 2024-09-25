@@ -162,7 +162,7 @@ const ResultsTable = ({ skip, setSkipTrue, setSkipFalse }) => {
 
   const updateBrowserURL = (id) => {
     // Modify the URL
-    var newUrl = "browseui/#" + id;
+    var newUrl = "prepub/#" + id;
     // Change the URL without reloading the page
     window.history.pushState({ path: newUrl }, "", newUrl);
   };

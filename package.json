@@ -1,8 +1,8 @@
 {
-  "name": "browseui",
-  "version": "0.1.0",
+  "name": "prepublication",
+  "version": "1.0.0",
   "private": true,
-  "homepage": "https://ghrc.earthdata.nasa.gov/browseui",
+  "homepage": "https://ghrc.earthdata.nasa.gov/prepub",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",

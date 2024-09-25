@@ -30,7 +30,7 @@ const GetURLBtn = () => {
         var blob = new Blob([tmp], {type: 'text/plain', endings:'native'});
         const element = document.createElement("a");
         element.href = URL.createObjectURL(blob);
-        element.download = "BrowseUI_URL_links.txt";
+        element.download = "prepub_URL_links.txt";
         document.body.appendChild(element); // Required for this to work in FireFox
         element.click();
       };

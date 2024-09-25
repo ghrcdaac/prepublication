@@ -32,7 +32,7 @@ root.render(
                     <BrowserRouter>
                         <Routes>
                             <Route path='*' element={<App />} />
-                            <Route path='/browseui/404' element={<PageNotFound />} />
+                            <Route path='/prepub/404' element={<PageNotFound />} />
                         </Routes>
                     </BrowserRouter>
                 </main>
