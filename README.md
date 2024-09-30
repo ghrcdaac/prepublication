@@ -1,20 +1,20 @@
-# GHRC-Cloud-Browse
-**GHRC Cloud Browse** is a web-based application for seamless access to unauthenticated BROWSE images and supporting documents related to NASA datasets. The application provides functionalities like image and document downloads, multi-select capability, printing options, and an interactive viewer equipped with search functionality.
+# GHRC-Prepublication
+**GHRC Prepublication** is a web-based application for seamless access to unauthenticated BROWSE images and supporting documents related to NASA datasets. The application provides functionalities like image and document downloads, multi-select capability, printing options, and an interactive viewer equipped with search functionality.
 
 ## Setup Instructions
 
-To set up the **GHRC Cloud Browse** application locally, follow these steps:
+To set up the **GHRC Prepublication** application locally, follow these steps:
 
 1. **Clone the Repository:**
    Open a terminal and run the following command to clone the repository:
    ```
-   git clone https://github.com/ghrcdaac/browseui.git
+   git clone https://github.com/ghrcdaac/prepublication.git
    ```
 
 2. **Navigate to the Project Directory:**
    After cloning the repository, navigate to the project folder:
    ```
-   cd GHRC-Cloud-Browse
+   cd prepublication
    ```
 
 3. **Install Dependencies:**
@@ -81,7 +81,7 @@ Images and documents can be viewed in a dedicated window with the following tool
 ## Access
 
 The application can be accessed at:  
-[GHRC Cloud Browse](https://ghrc.earthdata.nasa.gov/browseui)
+[GHRC Cloud Browse](https://ghrc.earthdata.nasa.gov/prepub)
 
 ## License
 

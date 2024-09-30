@@ -45,7 +45,7 @@ const BreadCrumbs = ({ setSkipFalse }) => {
     const handleRootClick = () =>{
         setSkipFalse()
         dispatch(setDelim('/'))
-        dispatch(setSearch('prepub/'))
+        dispatch(setSearch('stage/'))
         dispatch(setCrumb(''))
         updateBrowserURL('')
     }
@@ -66,7 +66,7 @@ const BreadCrumbs = ({ setSkipFalse }) => {
                   <FaHome/> Home
               </Typography>
               {crumbArray.map((crmb, index)=>(
-                  crmb['crmb'] !== 'prepub'?
+                  crmb['crmb'] !== 'stage'?
                       <Typography key={index} onClick={() => handleCrumbClick(crmb)} sx={{cursor:"pointer"}}>
                           {crmb['crmb']}
                       </Typography>:""
