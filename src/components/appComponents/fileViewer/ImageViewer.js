@@ -69,7 +69,7 @@ const ImageViewer = ({
             className={"downPrint"}
             onClick={() =>
               printJS({
-                printable: `${config.cloudWatchUrlBase}${img}`,
+                printable: `${config.sourceIMGUrl}${img}`,
                 type: isImage(img) !== "pdf" ? "image" : "pdf",
               })
             }
@@ -84,7 +84,7 @@ const ImageViewer = ({
         <span className={"printIcon"}>
           <button
             className={"downPrint"}
-            onClick={() => downloadFile(`${config.cloudWatchUrlBase}${img}`)}
+            onClick={() => downloadFile(`${config.sourceIMGUrl}${img}`)}
           >
             <NavigationButton
               onClick={''}
@@ -131,7 +131,7 @@ const ImageViewer = ({
       </span>
       <h2 className="file-name">
         {" "}
-        {`${config.cloudWatchUrlBase}${img}`.split("/").pop()}
+        {`${config.sourceIMGUrl}${img}`.split("/").pop()}
       </h2>
 
       <div className="image-zoom">

@@ -26,14 +26,14 @@ const MiscDocsViewer = ({
     <div style={{ textAlign: "center", top: "50%", left: "50%" }}>
       <h2 className="file-name">
         {" "}
-        {`${config.cloudWatchUrlBase}${img}`.split("/").pop()}
+        {`${config.sourceIMGUrl}${img}`.split("/").pop()}
         <span /*style={{ float: 'right' }}*/>
           <span className={"printIcon"}>
             {isImage(img) ? (
               <button
                 className={"downPrint"}
                 onClick={() =>
-                  downloadFile(`${config.cloudWatchUrlBase}${img}`)
+                  downloadFile(`${config.sourceIMGUrl}${img}`)
                 }
               >
                 <NavigationButton

@@ -123,7 +123,7 @@ const GetURLBtn = () => {
 
         <Button onClick={handleDashboardCopy}>Copy Dashboard URL to Clipboard</Button>
         <Button onClick={handleCopy}>Copy to Clipboard</Button>
-        <Button onClick={handleDownload}>Download as a file</Button>
+        <Button onClick={handleDownload}>Download links as a file</Button>
           <Button onClick={handleClose}>Close</Button>
         </DialogActions>
       </Dialog>
