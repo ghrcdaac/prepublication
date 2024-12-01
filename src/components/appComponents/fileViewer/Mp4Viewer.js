@@ -59,7 +59,7 @@ const Mp4Viewer = ({
             <span className={"printIcon"}>
                 <button
                 className={"downPrint"}
-                onClick={() => downloadFile(`${config.cloudWatchUrlBase}${img}`)}
+                onClick={() => downloadFile(`${config.sourceIMGUrl}${img}`)}
                 >
                 <NavigationButton
                     onClick={''}

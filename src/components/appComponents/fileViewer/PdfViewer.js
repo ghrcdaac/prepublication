@@ -51,7 +51,7 @@ const PdfViewer = ({
               className={"downPrint"}
               onClick={() =>
                 printJS({
-                  printable: `${config.cloudWatchUrlBase}${img}`,
+                  printable: `${config.sourceIMGUrl}${img}`,
                   type: isImage(img) !== "pdf" ? "image" : "pdf",
                 })
               }
@@ -65,7 +65,7 @@ const PdfViewer = ({
           <span className={"printIcon"}>
             <button
               className={"downPrint"}
-              onClick={() => downloadFile(`${config.cloudWatchUrlBase}${img}`)}
+              onClick={() => downloadFile(`${config.sourceIMGUrl}${img}`)}
             >
               <NavigationButton
                 onClick={''}
@@ -187,7 +187,7 @@ const PdfViewer = ({
             }}
           >
             <Viewer
-              fileUrl={`${config.cloudWatchUrlBase}${img}`}
+              fileUrl={`${config.sourceIMGUrl}${img}`}
               plugins={[toolbarPluginInstance]}
               defaultScale={1.25}
             />
