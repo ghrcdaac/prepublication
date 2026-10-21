@@ -1,5 +1,5 @@
-# Use a base image with Node.js 16 pre-installed
-FROM node:18
+# Use minimal, secure Node.js 22 LTS Alpine image
+FROM node:22-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
