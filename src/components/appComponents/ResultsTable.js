@@ -179,11 +179,7 @@ const ResultsTable = ({ skip, setSkipTrue, setSkipFalse }) => {
     //To set the next image to original size
     setScale(1);
     // File preview
-    setFilePath(`${config.cloudWatchUrlBase}${id}`, () => {
-      setImg(id);
-      setRowData(rows.row);
-      setOpen(true);
-    });
+    setFilePath(`${config.cloudWatchUrlBase}${id}`);
 
     // console.log('id: '+id);
     //handles double click of a columb and queries a file

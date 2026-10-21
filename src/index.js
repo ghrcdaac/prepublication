@@ -8,38 +8,37 @@ import App from './App'
 import store from './app/store'
 import { Footer } from './components/universal/Footer';
 import PageNotFound from './pages/PageNotFound';
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const baseUrl = process.env.REACT_APP_BASE_URL || '/';
-
-// Disable React's development warnings
-if (baseUrl !== '/') console.error = () => {};
 
 const root = createRoot(document.getElementById('root'))
 
 root.render(
     <React.StrictMode>
-        <Helmet>
-            {baseUrl && <base href={baseUrl} />}
-        </Helmet>
-        <Provider store={store}>
-            <div className="app">
-                <header>
-                    <CssBaseline />
-                    <TopBar />
-                </header>
-                <main>
-                    <BrowserRouter>
-                        <Routes>
-                            <Route path='*' element={<App />} />
-                            <Route path='/prepub/404' element={<PageNotFound />} />
-                        </Routes>
-                    </BrowserRouter>
-                </main>
-                <footer>
-                    <Footer />
-                </footer>
-            </div>
-        </Provider>
+        <HelmetProvider>
+            <Helmet>
+                {baseUrl && <base href={baseUrl} />}
+            </Helmet>
+            <Provider store={store}>
+                <div className="app">
+                    <header>
+                        <CssBaseline />
+                        <TopBar />
+                    </header>
+                    <main>
+                        <BrowserRouter>
+                            <Routes>
+                                <Route path='*' element={<App />} />
+                                <Route path='/prepub/404' element={<PageNotFound />} />
+                            </Routes>
+                        </BrowserRouter>
+                    </main>
+                    <footer>
+                        <Footer />
+                    </footer>
+                </div>
+            </Provider>
+        </HelmetProvider>
     </React.StrictMode>,
 )
