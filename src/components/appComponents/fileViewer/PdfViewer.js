@@ -190,6 +190,10 @@ const PdfViewer = ({
               fileUrl={`${config.sourceIMGUrl}${img}`}
               plugins={[toolbarPluginInstance]}
               defaultScale={1.25}
+              transformGetDocumentParams={(options) => ({
+                ...options,
+                isEvalSupported: false,
+              })}
             />
           </div>
         </div>
