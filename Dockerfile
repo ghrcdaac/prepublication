@@ -1,5 +1,5 @@
-# Use minimal, secure Node.js 22 LTS Alpine image
-FROM node:22-alpine
+# Pinned to Node.js 22.23.4 (Alpine), the security release that fixes the Brotli vulnerability
+FROM node:22.23.4-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
